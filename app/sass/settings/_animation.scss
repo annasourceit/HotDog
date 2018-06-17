@@ -1,0 +1,18 @@
+.svg {
+  animation-name: shine;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  animation-delay: 1s;
+}
+
+@keyframes shine {
+  0% {
+    fill: #969696;
+  }
+  50% {
+    fill: red;
+  }
+  100% {
+    fill: #969696;
+  }
+}

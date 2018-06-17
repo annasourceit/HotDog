@@ -1,0 +1,48 @@
+.footer {
+  @include breakpoint(tb){
+    margin-top: 0;
+  }
+}
+.footer__wrap {
+  @extend .column;
+  padding: 0 20px;
+  justify-content: space-between;
+  width: 100%;
+  border: 2px solid #e9e9e9;
+  background-color: #efefef;
+  @include breakpoint(tb){
+    display: flex;
+    flex-direction: row;
+    height: 76px;
+    justify-content: space-between;
+  }
+}
+
+.registered, .contact {
+  color: #555559;
+  font-family: $font-family1;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 30px;
+  @include breakpoint(tb){
+    font-size: 14px;
+    line-height: 76px;
+  }
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  span {
+    display: block;
+
+  }
+  @include breakpoint(tb){
+    span {
+      display: inline;
+    }
+    display: block;
+  }
+}

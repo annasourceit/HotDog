@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Dirty Dogs serves all-beef, vegan and vegatagian hot dogs">
+        <meta name="keywords" content="Hotdog">
+        <title>Classic</title>
+        <link rel="icon" type="image/png" href="img/favicon.png">
+        <link rel="stylesheet" href="css/libs.min.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <script src="js/libs.min.js"></script>
+        <script src="https://js.cx/babel-core/browser.min.js"></script>
+        <header class="header">
+            <div class="container">
+                <div class="header__banner">
+                    <img src="img/photo-grid.png" alt="" class="header_img">
+                </div>
+                <!--div.header__banner-->
+                <div class="header__menu">
+                    <menu class="menu">
+                        <li class="menu__item"><a href="index.html" class="menu__link">Menu</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Catering</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">About Us</a></li>
+                        <li class="menu__item"><a href="contact.html" class="menu__link">Contact</a></li>
+                    </menu>
+                    <menu class="mobMenu">
+                        <li class="mobMenu__item"></li>
+                        <li class="mobMenu__item"></li>
+                        <li class="mobMenu__item"></li>
+                    </menu>
+                </div>
+            </div>
+            <!--div.container-->
+        </header>
+
+        <main class="main">
+            <div class="container">
+                <div class="main__title">
+                    <div class="main__form">
+                        <h3 class="form__head">
+                            <span>Contact US</span>
+                        </h3>
+                        <p class="form__msgSubmit">
+                            <span>Form was sent.</span>
+                        </p>
+                        <form action="https://formula-test-api.herokuapp.com/contact" class="form" method="post" name="Contact_Form">
+                            <p class="form__wrap"><input type="text" class="form__item" name="UserName" placeholder="your name" required></p>
+                            <p class="form__wrap"><input type="text" class="form__item" name="UserEmail" placeholder="your email" required></p>
+                            <p class="form__wrap"><textarea name="Comment" id="" cols="30" rows="30" class="form__item" placeholder="your comment"></textarea>
+                            </p>
+                            <button class="form__btn" name="Submit">Submit</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+            <!--div.container-->
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__wrap">
+                    <div class="footer__registered">
+                        <p class="registered">® 2018 Dirty Dogs all rights reserved</p>
+                    </div>
+                    <div class="footer__contact">
+                        <p class="contact"><span>274 Marconi Blvd. Columbus, Ohio 43215</span> <span>|   614.538.0095   |</span><span>Contact Us</span></p>
+                    </div>
+                </div>
+            </div>
+            <!--div.container-->
+        </footer>
+
+        <script src="js/common.js" type="text/babel"></script>
+    </body>
+</html>
